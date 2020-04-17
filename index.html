@@ -26,11 +26,11 @@
        <a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Freconstruccion01%402x.png?v=1587069173328" rotation="0 0 0" position="-50 15 -50" width="50%" height="15%" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;" ></a-image>
        <a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Freconstrucion02.png?v=1587069837353" rotation="0 90 0" position="-71 15 -21" width="60%" height="20%" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;" ></a-image>
       <a-asset>
-            <a-asset-item id="texterreno1" src="tex1finales2/textura1.mtl"></a-asset-item>
+            <a-asset-item id="texterreno1" src="textura1.mtl"></a-asset-item>
 
-        <a-asset-item id="terreno1" src="tex1finales2/textura1.obj"></a-asset-item>
+        <a-asset-item id="terreno1" src="textura1.obj"></a-asset-item>
     </a-asset>
-          <a-obj-model src="tex1finales2/textura1.obj" position="-33 -10 -25" scale="0.25 0.25 0.25" animation="property: rotation; to: 0 360 0; loop: true; dur: 40000"></a-entity>
+          <a-entity obj-model="obj: #terreno1, mtl: #texterreno1"  position="-33 -10 -25" scale="0.25 0.25 0.25" animation="property: rotation; to: 0 360 0; loop: true; dur: 40000"></a-entity>
              <a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Fsuelo.png?v=1586904719814" rotation="0 0 90" position="-50 15 -52" width="69%" height="69%" animation="property: position; to: -50 15 10; loop: true; dur: 10000" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;"></a-image>
 
       <a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Fsuelo.png?v=1586904719814" rotation="0 90 90" position="-73 15 -27" width="69%" height="69%" animation="property: position; to: -29 15 -27; loop: true; dur: 10000" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;"></a-image>
