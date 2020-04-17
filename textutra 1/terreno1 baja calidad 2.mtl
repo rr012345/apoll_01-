@@ -12,5 +12,5 @@ newmtl Material__25
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka maps\relieve 1.bmp
-	map_Kd maps\relieve 1.bmp
+	map_Ka textura_1\relieve 1.bmp
+	map_Kd textura_1\relieve 1.bmp
