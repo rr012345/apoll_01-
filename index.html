@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="/script.js"></script>
+    <style type="text/css"> 
+     body {
+ background-image: url("https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Ffondo-terminado.gif?v=1587000231751");}
+       #capa2{ position:absolute; z-index:1; }
+       #capa1{ position:absolute; 
+        z-index:0; 
+       top:0px;
+       left:0px;
+      width:100%;
+      }
+      </style>
+</head>
+  
+  <body >
+        <div id="capa2">
+    <a-scene>
+
+      <a-sky material="transparent: true; " src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Fsky%20final.png?v=1586830147797" ></a-sky>
+      <a-light type="ambient" color="white" position="0 0 0" light.intensity="0.2"></a-light>
+      <a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Fsuelo.png?v=1586904719814" rotation="90 0 0" position="0 -15 0" width="130%" height="120%" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;"></a-image>
+      
+       <a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Freconstruccion01%402x.png?v=1587069173328" rotation="0 0 0" position="-50 15 -50" width="50%" height="15%" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;" ></a-image>
+       <a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Freconstrucion02.png?v=1587069837353" rotation="0 90 0" position="-71 15 -21" width="60%" height="20%" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;" ></a-image>
+      <a-asset>
+            <a-asset-item id="texterreno1" src="https://github.com/rr012345/apoll_01-/blob/master/tex1finales2/textura1.mtl"></a-asset-item>
+
+        <a-asset-item id="terreno1" src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Ftextura1.obj?v=1587100542857"></a-asset-item>
+    </a-asset>
+          <a-entity obj-model="obj: url(https://github.com/rr012345/apoll_01-/blob/master/tex1finales2/textura1.obj);  mtl: url(https://github.com/rr012345/apoll_01-/blob/master/tex1finales2/textura1.mtl);" position="-33 -10 -25" scale="0.25 0.25 0.25" animation="property: rotation; to: 0 360 0; loop: true; dur: 40000"></a-entity>
+             <a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Fsuelo.png?v=1586904719814" rotation="0 0 90" position="-50 15 -52" width="69%" height="69%" animation="property: position; to: -50 15 10; loop: true; dur: 10000" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;"></a-image>
+
+      <a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Fsuelo.png?v=1586904719814" rotation="0 90 90" position="-73 15 -27" width="69%" height="69%" animation="property: position; to: -29 15 -27; loop: true; dur: 10000" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;"></a-image>
+      <a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Fmedia%20luna_1.png?v=1587076820238" rotation="0 0 0" position="0 15 90" width="70%" height="70%" animation="property: rotation; to: 0 0 0; loop: true; dur: 10000" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;" ></a-image>
+      <a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Ffodo%20media%20luna.png?v=1587077420223" rotation="0 0 0" position="0 15 91" width="60%" height="60%" animation="property: rotation; to: 0 0 360; loop: true; dur: 2000" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;" ></a-image>
+
+      
+      <a-entity>
+      <a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2FRecurso%201.png?v=1587041375749" rotation="0 0 0" position="0 15 -90" width="50%" height="50%" animation="property: rotation; to: 360 -360 0; loop: true; dur: 10000" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;" ></a-image>
+<a-image  src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2FRecurso%201.png?v=1587041375749" rotation="0 0 0" position="0 15 -90" width="70%" height="70%" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000" material.depthtest="true" alpha-test="0.1" material="metalness: 0.1; ; roughness: 0.3;" ></a-image>
+        <a-entity rotation="0 0 0"  position="0 15 -90" animation="property: rotation; to: 0 -360 360; loop: true; dur: 10000">
+            <a-sphere src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Fmoon%20map.jpg?v=1587049837470" position="0 0 0" radius="12" animation="property: rotation; to: 0 0 0; loop: true; dur: 20000"  material="metalness: 0.1; ; roughness: 0.3;"></a-sphere>
+      </a-entity>
+      </a-entity>
+      
+      <a-entity rotation="0 0 0"  position="0 0 0" animation="property: rotation; to: 360 -360 360; loop: true; dur: 10000">
+      <a-sphere src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2FLOLA_map.jpg?v=1586909517117" position="0 25 -100" radius="12" animation="property: rotation; to: 0 0 0; loop: true; dur: 40000"  material="metalness: 0.1; ; roughness: 0.3;"></a-sphere>
+        <a-entity rotation="0 0 0"  position="0 0 0" animation="property: rotation; to: -360 -360 -360; loop: true; dur: 35000">
+       <a-sphere src="https://cdn.glitch.com/12670a6f-543f-46ce-b9d1-24c5ed18c8e7%2Fslope16ppd.png?v=1586910380291" position="0 -12 -110" radius="6" animation="property: rotation; to: 0 0 0; loop: true; dur: 40000"  material="metalness: 0.1; ; roughness: 0.3;"></a-sphere>
+        </a-entity>  
+     </a-entity>
+          </a-scene>
+    </div>
+<div id="capa1">
+
+    </div>
+    
+  </body>
+</html> 				
